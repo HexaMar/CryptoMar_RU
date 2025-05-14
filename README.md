@@ -22,6 +22,7 @@ CryptoMar — это высокопроизводительный инструм
 
    ```bash
    sudo xattr -r -d com.apple.quarantine /Users/ваше_имя/Downloads/cryptomar_ru.bin
+   chmod +x /Users/ваше_имя/Downloads/cryptomar_ru.bin
    ```
 
    * Замените `ваше_имя` на ваше реальное имя пользователя macOS.
