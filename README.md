@@ -32,13 +32,20 @@ CryptoMar — это высокопроизводительный инструм
    ```bash
    sudo xattr -r -d com.apple.quarantine cryptomar_MacOS_free.bin
    chmod +x cryptomar_MacOS_free.bin
+   sudo xattr -r -d com.apple.quarantine cryptomar_MacOS_full.bin
+   chmod +x cryptomar_MacOS_full.bin
    ```
 4. **Запустите программу:**
 
    ```bash
    ./cryptomar_MacOS_free.bin
    ```
-5. Найденные ключи автоматически сохранятся в файле `found_keys.txt`.
+   или
+   
+   ```bash
+   ./cryptomar_MacOS_full.bin
+   ```
+6. Найденные ключи автоматически сохранятся в файле `found_keys.txt`.
 
 ## ⚡ Платные и бесплатные версии
 
