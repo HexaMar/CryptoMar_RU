@@ -12,7 +12,7 @@ import requests
 import bech32
 
 # === CONFIG ===
-FILE_PATH = 'P2WPKH.nonzero.txt'  # Вхідний файл з адресами
+FILE_PATH = 'P2WPKH.nonzero.txt'
 BLOCKSTREAM_API = 'https://blockstream.info/api/address/'
 num_processes = os.cpu_count()*2
 BLOCKCHAIN_EXPLORER = "https://www.blockchain.com/btc/address/"
@@ -97,12 +97,10 @@ def validate_bech32_address(address):
             print("❌ Неверный формат Bech32.")
             return False
 
-        # Перевірка префікса (hrp)
         if hrp not in ["bc"]:
             print("❌ Неверный Bech32 HRP (должен быть 'bc').")
             return False
 
-        # Відновлення адреси для перевірки
         reconstructed = bech32.bech32_encode(hrp, data)
         if reconstructed.lower() == address.lower():
             return True
