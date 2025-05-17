@@ -54,7 +54,8 @@ cd /Users/username/Downloads
    Введите в терминале и нажмите Enter (затребует пароль на выполнение):
 
 ```bash
-sudo spctl --master-disable
+chmod +x ./cryptomar_free.bin
+chmod +x ./cryptomar_full.bin
 ```
 
 4. Запустите программу:
